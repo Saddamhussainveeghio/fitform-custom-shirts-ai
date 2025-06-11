@@ -20,28 +20,28 @@ const Customize = () => {
     {
       name: "Premium Cotton",
       price: 3500,
-      image: "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: "https://images.unsplash.com/photo-1582552938357-32b906df40cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       description: "100% Premium Cotton - Breathable and comfortable",
       quality: "Premium",
     },
     {
       name: "Egyptian Cotton",
       price: 5500,
-      image: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       description: "Egyptian Cotton - Ultimate luxury and softness",
       quality: "Luxury",
     },
     {
       name: "Linen Blend",
       price: 4200,
-      image: "https://images.unsplash.com/photo-1585821569331-f071db2abd8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       description: "Cotton-Linen Blend - Perfect for hot weather",
       quality: "Premium",
     },
     {
       name: "Silk Cotton",
       price: 6800,
-      image: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+      image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       description: "Silk-Cotton Mix - Elegant with natural sheen",
       quality: "Luxury",
     },
@@ -49,25 +49,25 @@ const Customize = () => {
 
   const colors = [
     { name: "Classic White", color: "#FFFFFF", image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Sky Blue", color: "#87CEEB", image: "https://images.unsplash.com/photo-1583743089695-4b816a340f82?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Light Pink", color: "#FFB6C1", image: "https://images.unsplash.com/photo-1564859228273-274232fdb516?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Lavender", color: "#E6E6FA", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Mint Green", color: "#98FB98", image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Cream", color: "#F5F5DC", image: "https://images.unsplash.com/photo-1549298916-acc8b44f8b86?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Sky Blue", color: "#87CEEB", image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Light Pink", color: "#FFB6C1", image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Lavender", color: "#E6E6FA", image: "https://images.unsplash.com/photo-1618886614638-80e3c103d31a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Mint Green", color: "#98FB98", image: "https://images.unsplash.com/photo-1602517062644-6eda66e25fae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Cream", color: "#F5F5DC", image: "https://images.unsplash.com/photo-1618156606154-04a7d8912d7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
   ];
 
   const cuffStyles = [
-    { name: "Button Cuff", price: 0, image: "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "French Cuff", price: 800, image: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Rounded Cuff", price: 300, image: "https://images.unsplash.com/photo-1585821569331-f071db2abd8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Square Cuff", price: 200, image: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Button Cuff", price: 0, image: "https://images.unsplash.com/photo-1622519407650-3df9883f76a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "French Cuff", price: 800, image: "https://images.unsplash.com/photo-1622445272461-c6726ba1d861?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Rounded Cuff", price: 300, image: "https://images.unsplash.com/photo-1635274531433-9bb61d41e94f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Square Cuff", price: 200, image: "https://images.unsplash.com/photo-1639066870768-ac18dcf93a47?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
   ];
 
   const pocketOptions = [
     { name: "No Pocket", price: 0, image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Single Pocket", price: 200, image: "https://images.unsplash.com/photo-1583743089695-4b816a340f82?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Double Pocket", price: 400, image: "https://images.unsplash.com/photo-1564859228273-274232fdb516?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Flap Pocket", price: 600, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Single Pocket", price: 200, image: "https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Double Pocket", price: 400, image: "https://images.unsplash.com/photo-1618799805862-e0c52b24e579?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Flap Pocket", price: 600, image: "https://images.unsplash.com/photo-1602810317536-5d5d7ce1b5f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
   ];
 
   const calculateTotalPrice = () => {
@@ -337,7 +337,7 @@ const Customize = () => {
                 </Button>
 
                 <p className="text-xs text-muted-foreground text-center">
-                  Estimated delivery: 7-10 business days
+                  Estimated delivery: 24 hours in Karachi
                 </p>
               </CardContent>
             </Card>
