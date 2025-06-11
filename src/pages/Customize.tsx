@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -50,11 +49,11 @@ const Customize = () => {
 
   const colors = [
     { name: "Classic White", color: "#FFFFFF", image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Sky Blue", color: "#87CEEB", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Sky Blue", color: "#87CEEB", image: "https://images.unsplash.com/photo-1583743089695-4b816a340f82?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
     { name: "Light Pink", color: "#FFB6C1", image: "https://images.unsplash.com/photo-1564859228273-274232fdb516?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Lavender", color: "#E6E6FA", image: "https://images.unsplash.com/photo-1592906209472-a36b1f3782ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Lavender", color: "#E6E6FA", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
     { name: "Mint Green", color: "#98FB98", image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Cream", color: "#F5F5DC", image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Cream", color: "#F5F5DC", image: "https://images.unsplash.com/photo-1549298916-acc8b44f8b86?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
   ];
 
   const cuffStyles = [
@@ -66,9 +65,9 @@ const Customize = () => {
 
   const pocketOptions = [
     { name: "No Pocket", price: 0, image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Single Pocket", price: 200, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Single Pocket", price: 200, image: "https://images.unsplash.com/photo-1583743089695-4b816a340f82?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
     { name: "Double Pocket", price: 400, image: "https://images.unsplash.com/photo-1564859228273-274232fdb516?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
-    { name: "Flap Pocket", price: 600, image: "https://images.unsplash.com/photo-1592906209472-a36b1f3782ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+    { name: "Flap Pocket", price: 600, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
   ];
 
   const calculateTotalPrice = () => {
