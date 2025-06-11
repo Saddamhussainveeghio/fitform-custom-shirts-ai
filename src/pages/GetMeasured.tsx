@@ -20,14 +20,51 @@ const GetMeasured = () => {
   const handlePhotoUpload = (event: React.ChangeEvent<HTMLInputElement>, type: 'front' | 'side') => {
     const file = event.target.files?.[0];
     if (file) {
+      // Validate file type
+      if (!file.type.startsWith('image/')) {
+        toast({
+          title: "Invalid File Type",
+          description: "Please upload an image file",
+          variant: "destructive",
+        });
+        return;
+      }
+
+      // Validate file size (max 10MB)
+      if (file.size > 10 * 1024 * 1024) {
+        toast({
+          title: "File Too Large",
+          description: "Please upload an image smaller than 10MB",
+          variant: "destructive",
+        });
+        return;
+      }
+
       const reader = new FileReader();
       reader.onload = (e) => {
-        const imageUrl = e.target?.result as string;
-        if (type === 'front') {
-          setFrontPhoto(imageUrl);
-        } else {
-          setSidePhoto(imageUrl);
+        const result = e.target?.result;
+        if (typeof result === 'string') {
+          if (type === 'front') {
+            setFrontPhoto(result);
+            toast({
+              title: "Front Photo Uploaded",
+              description: "Front view photo uploaded successfully",
+            });
+          } else {
+            setSidePhoto(result);
+            toast({
+              title: "Side Photo Uploaded", 
+              description: "Side view photo uploaded successfully",
+            });
+          }
         }
+      };
+      reader.onerror = () => {
+        toast({
+          title: "Upload Error",
+          description: "Failed to upload image. Please try again.",
+          variant: "destructive",
+        });
       };
       reader.readAsDataURL(file);
     }
@@ -131,7 +168,7 @@ const GetMeasured = () => {
                   {/* Front Photo */}
                   <div className="space-y-4">
                     <Label className="text-lg font-semibold">Front View Photo</Label>
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
+                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-gray-400 transition-colors">
                       {frontPhoto ? (
                         <div className="space-y-4">
                           <img
@@ -152,13 +189,13 @@ const GetMeasured = () => {
                           </div>
                         </div>
                       )}
-                      <Label htmlFor="front-photo" className="cursor-pointer">
-                        <Button variant="outline" className="mt-4">
+                      <label htmlFor="front-photo" className="cursor-pointer">
+                        <Button variant="outline" className="mt-4" type="button">
                           <Upload className="h-4 w-4 mr-2" />
                           {frontPhoto ? "Change Photo" : "Upload Photo"}
                         </Button>
-                      </Label>
-                      <Input
+                      </label>
+                      <input
                         id="front-photo"
                         type="file"
                         accept="image/*"
@@ -171,7 +208,7 @@ const GetMeasured = () => {
                   {/* Side Photo */}
                   <div className="space-y-4">
                     <Label className="text-lg font-semibold">Side View Photo</Label>
-                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
+                    <div className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-gray-400 transition-colors">
                       {sidePhoto ? (
                         <div className="space-y-4">
                           <img
@@ -192,13 +229,13 @@ const GetMeasured = () => {
                           </div>
                         </div>
                       )}
-                      <Label htmlFor="side-photo" className="cursor-pointer">
-                        <Button variant="outline" className="mt-4">
+                      <label htmlFor="side-photo" className="cursor-pointer">
+                        <Button variant="outline" className="mt-4" type="button">
                           <Upload className="h-4 w-4 mr-2" />
                           {sidePhoto ? "Change Photo" : "Upload Photo"}
                         </Button>
-                      </Label>
-                      <Input
+                      </label>
+                      <input
                         id="side-photo"
                         type="file"
                         accept="image/*"
